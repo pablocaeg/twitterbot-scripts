@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "image-downloader": "^4.1.0",
+    "image-to-base64": "^2.2.0",
+    "reddit": "^1.2.1",
+    "twit": "^2.2.11"
+  },
+  "name": "dailycutepic",
+  "version": "1.0.0",
+  "main": "run.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently --kill-others \"npm run app\" \"npm run tracker\"",
+    "app": "node run.js",
+    "tracker": "node trackinganimals.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
